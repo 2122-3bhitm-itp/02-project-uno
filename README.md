@@ -4,7 +4,8 @@ A school project which implements the game UNO with the help of Java
 
 ## Team
 
-* Just Elias
+* Elias Just
 * David Thaller
+* Sebastian Lautischer
 * Lydia Reiter
 * Thomas Spindler

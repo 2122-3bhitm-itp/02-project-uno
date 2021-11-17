@@ -1,5 +1,5 @@
 = Projektauftrag
-David Thaller, Elias Just, Lydia Reiter, Thomas Spindler
+David Thaller, Elias Just, Lydia Reiter, Sebastian Lautischer, Thomas Spindler
 1.0.0, 2021/22
 ifndef::imagesdir[:imagesdir: images]
 //:toc-placement!:  // prevents the generation of the doc at this position, so it can be printed afterwards
@@ -14,20 +14,107 @@ ifdef::backend-html5[]
 // print the toc here (not at the default position)
 //toc::[]
 
-== UNO Kartenspiel
+== Projektbezeichnung
+UNO Kartenspiel
+
+== Projektauftraggeber
+Prof. Mag. Dr. Thomas Stütz +
+E-Mail-Adresse: t.stütz@htl-leonding.ac.at +
+HTL Leonding
+
+== Projekthintergrund
+Bei dem Projekt geht es vor allem um den Spielspaß.
+
+== Projektendergebnis
+Alle Regeln des UNO-Spieles sollten eingehalten werden, und dass Programm soll fair gehalten werden.
+Ein Nebenergebnis des Spieles ist strategisches und taktisches Denken.
+
+== Projektziel
+Ein funktionierendes UNO programm, dass dem Spieler Spaß und Unterhaltung bietet.
+
+Ziele:
+
+* Funktionierendes Spiel:
+* Spielstand mit Highscore
+* Statistiken
+* (+) Farbenblinden Modus
+* (+) verschiedene Spielmodi
+
+Nicht Ziele:
+
+* verschiedene  Spielmodi
+
+== Projektbeschreibung
+UNO ist eines der bekanntesten Kartenspiele.
+Es gibt verschiedene Varianten davon, und mann kann es
+auf viele verschiedene Arten spielen. Dieses Projekt setzt
+das Spiel digital um.
+
+== Meilensteine
+
+=== UNO Core:
+Uno auf der Commandline, mit den basic features, wie verschiedene
+Karten, etl. Bots
+
+=== UI Design
+SVG komponenten und Grunddesign des Programmes +
+https://www.figma.com/file/nTd0iuiqRUMpcepvEPDQ0Z/UNO[Figma UI Concepts]
+
+=== UI Code
+Umsetzen des UI Designs in JavaFX.
+
+=== Statistik Datenbank
+Datenbank für Statistik (Gewinne, Spielzeit, gespielte Spiele)
+in Java mithilfe von JDBC.
+
+=== Farbenblinden Modus (+)
+Ein Modus, der das Spielen des Spieles selbst für
+Farbenblinde personen einfach macht.
+
+=== Verschiedene Spielmodi (+)
+neue Spielmodi mit eigens festgelegten Abläufen und Regeln.
+
+== Projektressourcen
+
+* Java, JavaFX
+* Maven
+* JDBC
+* Datenbank (Oracle DB, MySQL)
+* Docker?
+* https://www.figma.com/file/nTd0iuiqRUMpcepvEPDQ0Z/UNO[Figma]
+* Illustrator
+* IntelliJ Idea
+* SceneBuilder
+* https://github.com/2122-3bhitm-itp/02-project-uno[Github]
+
+== Projektorganisation
+Projektleiter: Thomas Spindler
+
+=== Aufgabenbereiche
+* Programmieren (basic)
+* Designen
+* Datenbanken
+* JavaFX
+* Management (z.B: docs)
 
 
-=== Aufgabenverteilung
-    - David Thaller
-    - Elias Just
-    - Lydia Reiter
-    - Thomas Spindler
+=== Einteilung
 
-=== Projektziel
-Modernes, funktionelles UNO Kartenspiel im darkmode, implementiert mit Java
-Spielspaß
+[options='header']
+|==============================
+| Mitglied | Einteilung
+| Elias Just | Datenbanken, Programmierung
+| David Thaller | Design, Programmierung
+| Sebastian Lautischer | Design, Management
+| Lydia Reiter | Design, Programmierung
+| Thomas Spindler | Projektleitung, Programmierung, JavaFX
+|==============================
 
-=== Abgrenzung
+== Projektstart / Projektende
+noch nicht offiziell festgelegt
 
+== Projektrisiken
+* Spiel, dass keinen Spielspaß bietet
 
-=== Meilensteine
+== Abschluss des Projektauftrages
+17.11.2021

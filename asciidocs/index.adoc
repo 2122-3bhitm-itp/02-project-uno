@@ -35,7 +35,7 @@ Alle Regeln des UNO-Spieles sollten eingehalten werden, und dass Programm soll f
 Ein Nebenergebnis des Spieles ist strategisches und taktisches Denken.
 
 == Projektziel
-Ein funktionierendes UNO programm, dass dem Spieler Spaß und Unterhaltung bietet.
+Ein funktionierendes UNO-Program, dass dem Spieler Spaß und Unterhaltung bietet.
 
 Ziele:
 
@@ -62,7 +62,7 @@ Uno auf der Commandline, mit den basic features, wie verschiedene
 Karten, etl. Bots
 
 === UI Design
-SVG komponenten und Grunddesign des Programmes +
+SVG Komponenten und Grunddesign des Programmes +
 https://www.figma.com/file/nTd0iuiqRUMpcepvEPDQ0Z/UNO[Figma UI Concepts]
 
 === UI Code
@@ -74,7 +74,7 @@ in Java mithilfe von JDBC.
 
 === Farbenblinden Modus (+)
 Ein Modus, der das Spielen des Spieles selbst für
-Farbenblinde personen einfach macht.
+farbenblinde Personen einfach macht.
 
 === Verschiedene Spielmodi (+)
 neue Spielmodi mit eigens festgelegten Abläufen und Regeln.

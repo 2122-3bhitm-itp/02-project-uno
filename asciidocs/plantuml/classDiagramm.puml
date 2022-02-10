@@ -1,0 +1,65 @@
+@startuml
+
+skinparam backgroundcolor transparent
+skinparam shadowing false
+
+left to right direction
+
+abstract Player{
+PlayerID: int
+name: String
+}
+class Deck{
+DeckID: int
+}
+
+class Humanplayer{
+}
+
+class Computerplayer{
+}
+abstract AbstractCard{
+AbstractCardID: int
+color: enum
+type: enum
+--
+equals()
+isCompatible()
+}
+class NormalCard{
+}
+class ActionCard{
+onAction()
+}
+
+class Game{
+gameID: int
+cardNum: int
+centerCard: AbstractCard
+}
+interface GameUI{
+
+}
+class CommandLineUI{
+}
+class GraphicUI{
+}
+
+AbstractCard <|-- NormalCard
+AbstractCard <|-- ActionCard
+
+Player <|-- Computerplayer
+Player <|-- Humanplayer
+Player "1" -- "1" Deck
+Player "*" --> "1" GameUI
+Player "*" <-- "1" Game
+
+AbstractCard "*" --> "1" Deck
+
+Game "1" --> "1" AbstractCard : centerCard
+
+(Game, Player)..Play
+
+GameUI<|-- CommandLineUI
+GameUI<|-- GraphicUI
+@enduml

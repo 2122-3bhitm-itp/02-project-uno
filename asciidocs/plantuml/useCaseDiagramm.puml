@@ -1,0 +1,14 @@
+@startuml
+skinparam backgroundcolor transparent
+skinparam shadowing false
+
+left to right direction
+
+actor "Player" as pl
+
+rectangle UNO {
+    usecase "Entertainment" as UCEnt
+}
+
+pl -- UCEnt
+@enduml

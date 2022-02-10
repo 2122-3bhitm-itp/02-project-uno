@@ -123,3 +123,17 @@ noch nicht offiziell festgelegt
 
 == Abschluss des Projektauftrages
 17.11.2021
+
+== Klassendiagramm
+
+[plantuml, class-diagramm]
+----
+include::./plantuml/classDiagramm.puml[]
+----
+
+== Usecase-Diagramm
+
+[plantuml, usecase-diagramm]
+----
+include::./plantuml/useCaseDiagramm.puml[]
+----

@@ -1,65 +1,35 @@
 @startuml
-
 skinparam backgroundcolor transparent
 skinparam shadowing false
 
 left to right direction
 
-abstract Player{
-PlayerID: int
-name: String
-}
-class Deck{
-DeckID: int
+class Player {
+    name
 }
 
-class Humanplayer{
+class Hand
+
+class Game
+
+class Deck
+
+class Card
+
+class CardType {
+    color
+    type
 }
 
-class Computerplayer{
-}
-abstract AbstractCard{
-AbstractCardID: int
-color: enum
-type: enum
---
-equals()
-isCompatible()
-}
-class NormalCard{
-}
-class ActionCard{
-onAction()
-}
+Player "1"<--"*" Hand
+Player "*"--"*" Game
+(Player, Game) .. Play
 
-class Game{
-gameID: int
-cardNum: int
-centerCard: AbstractCard
-}
-interface GameUI{
 
-}
-class CommandLineUI{
-}
-class GraphicUI{
-}
+Game "1"<--"*" Hand
+Game "1"--"1" Deck
 
-AbstractCard <|-- NormalCard
-AbstractCard <|-- ActionCard
-
-Player <|-- Computerplayer
-Player <|-- Humanplayer
-Player "1" -- "1" Deck
-Player "*" --> "1" GameUI
-Player "*" <-- "1" Game
-
-AbstractCard "*" --> "1" Deck
-
-Game "1" --> "1" AbstractCard : centerCard
-
-(Game, Player)..Play
-
-GameUI<|-- CommandLineUI
-GameUI<|-- GraphicUI
+Deck "1"<--"*" Card
+Card "*"-->"1" CardType
+Card "*"-->"1" Hand
 @enduml

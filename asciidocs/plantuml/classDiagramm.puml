@@ -27,7 +27,7 @@ Player "*"--"*" Game
 
 
 Game "1"<--"*" Hand
-Game "1"--"1" Deck
+Game "1"--"*" Deck
 
 Deck "1"<--"*" Card
 Card "*"-->"1" CardType

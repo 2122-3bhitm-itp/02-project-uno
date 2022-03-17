@@ -23,7 +23,7 @@ image::github.png[50, 50, link="https://github.com/2122-3bhitm-itp/02-project-un
 UNO Kartenspiel
 
 == Projektauftraggeber
-Prof. Mag. Dr. Thomas Stütz +
+Thomas Stütz +
 E-Mail-Adresse: t.stütz@htl-leonding.ac.at +
 HTL Leonding
 

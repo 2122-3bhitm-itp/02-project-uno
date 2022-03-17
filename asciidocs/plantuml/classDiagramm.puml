@@ -2,34 +2,23 @@
 skinparam backgroundcolor transparent
 skinparam shadowing false
 
-left to right direction
-
+class Game {}
 class Player {
     name
 }
-
-class Hand
-
-class Game
-
-class Deck
-
-class Card
-
+class Hand {}
+class Card {}
+class Deck {}
 class CardType {
     color
     type
 }
 
-Player "1"<--"*" Hand
-Player "*"--"*" Game
-(Player, Game) .. Play
+Game -- Player
+(Player, Game) .. Hand
+Hand -- Card
+Card -- CardType
+Game -- Deck
+Deck -- Card
 
-
-Game "1"<--"*" Hand
-Game "1"--"*" Deck
-
-Deck "1"<--"*" Card
-Card "*"-->"1" CardType
-Card "*"-->"1" Hand
 @enduml

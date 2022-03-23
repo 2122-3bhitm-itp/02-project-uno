@@ -23,3 +23,5 @@ image::github.png[50, 50, link="https://github.com/2122-3bhitm-itp/02-project-un
 https://2122-3bhitm-itp.github.io/02-project-uno/asciidocs/project-files/projektauftrag/
 
 == Pflichtenheft
+
+https://2122-3bhitm-itp.github.io/02-project-uno/asciidocs/project-files/pflichtenheft

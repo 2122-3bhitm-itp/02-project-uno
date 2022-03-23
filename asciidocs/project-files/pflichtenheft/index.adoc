@@ -1,0 +1,64 @@
+= Pflichtenheft
+David Thaller, Elias Just, Lydia Reiter, Sebastian Lautischer, Thomas Spindler
+1.0.0, 2021/22
+ifndef::imagesdir[:imagesdir: ../../images/]
+//:toc-placement!:  // prevents the generation of the doc at this position, so it can be printed afterwards
+:sourcedir: ../src/main/java
+:icons: font
+:sectnums:    // Nummerierung der Überschriften / section numbering
+:toc: left
+:stylesdir: style
+
+//Need this blank line after ifdef, don't know why...
+ifdef::backend-html5[]
+
+// print the toc here (not at the default position)
+//toc::[]
+
+image::figma.png[float="left", 50, 50, link="https://www.figma.com/file/nTd0iuiqRUMpcepvEPDQ0Z/UNO"]
+image::github.png[50, 50, link="https://github.com/2122-3bhitm-itp/02-project-uno"]
+
+== Ausgangssituation
+
+Mehr als 100.000 Personen setzten sich bei Fridays for Future für unsere Umwelt ein.
+Doch auch wir Schüler der HTL Leonding wollen etwas für unsere Welt unternehmen.
+
+== Istzustand
+
+Viele unserer Mitmenschen wissen schon einiges über den Klimawandel und dessen Folgen und einige
+von Ihnen achten auf deren Konsum, mit verwendung von Glasflaschen oder Mülltrennung.
+
+== Problemstellung
+
+Jedoch gibt es Jugendliche, Erwachsene und Kinder, die dieses Thema nicht verstehen oder
+auch nicht begreifen wie wichtig dieses Thema ist, denn unsere Fehlentscheidungen holen uns schnell ein.
+
+== Aufgabenstellung
+=== Funktionale Anforderungen
+
+[plantuml,wireframe,png]
+----
+@startsalt
+{
+Name         | "                 "
+Modifiers:   | { (X) public | () default | () private | () protected
+	            [] abstract | [] final   | [] static }
+Superclass:  | { "java.lang.Object " | [Browse...] }
+}
+@endsalt
+----
+
+=== Nichtfunktionale Anforderungen (NFA)
+
+
+== Ziele
+
+Unser wichtigstes Ziel ist ein funktionierendes Spiel, doch auch ist eine Statistik sehr wichtig.
+Die Statistik wollen wir mit Highscores einbinden und noch weiteren Informationen zu beendeten Spielen anzeigen.
+
+== Systemarchitektur
+
+image::systemarchitektur.png[]
+
+Die Datenbank (Postgres) läuft in einen Docker Container. Mittels JDBC wird eine Verbindung mit der Datenbank aufgebaut
+und auf einer JavaFx Oberfläche angezeigt.

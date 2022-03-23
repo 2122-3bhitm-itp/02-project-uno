@@ -58,3 +58,7 @@ Die Statistik wollen wir mit Highscores einbinden und noch weiteren Informatione
 
 == Systemarchitektur
 
+image::systemarchitektur.png[]
+
+Die Datenbank (Postgres) läuft in einen Docker Container. Mittels JDBC wird eine Verbindung mit der Datenbank aufgebaut
+und auf einer JavaFx Oberfläche angezeigt.

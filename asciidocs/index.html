@@ -457,12 +457,11 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#_projektbeschreibung">6. Projektbeschreibung</a></li>
 <li><a href="#_meilensteine">7. Meilensteine</a>
 <ul class="sectlevel2">
-<li><a href="#_uno_core">7.1. UNO Core:</a></li>
-<li><a href="#_ui_design">7.2. UI Design</a></li>
-<li><a href="#_ui_code">7.3. UI Code</a></li>
-<li><a href="#_statistik_datenbank">7.4. Statistik Datenbank</a></li>
-<li><a href="#_farbenblinden_modus">7.5. Farbenblinden Modus (+)</a></li>
-<li><a href="#_verschiedene_spielmodi">7.6. Verschiedene Spielmodi (+)</a></li>
+<li><a href="#_recherche">7.1. Recherche</a></li>
+<li><a href="#_logik_umsetzung">7.2. Logik umsetzung</a></li>
+<li><a href="#_ui_design">7.3. UI Design</a></li>
+<li><a href="#_ui_code">7.4. UI Code</a></li>
+<li><a href="#_statistik_datenbank">7.5. Statistik Datenbank</a></li>
 </ul>
 </li>
 <li><a href="#_projektressourcen">8. Projektressourcen</a></li>
@@ -499,7 +498,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <h2 id="_projektbezeichnung">1. Projektbezeichnung</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>UNO Kartenspiel</p>
+<p>Quiz</p>
 </div>
 </div>
 </div>
@@ -525,8 +524,8 @@ HTL Leonding</p>
 <h2 id="_projektendergebnis">4. Projektendergebnis</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Alle Regeln des UNO-Spieles sollten eingehalten werden, und dass Programm soll fair gehalten werden.
-Ein Nebenergebnis des Spieles ist strategisches und taktisches Denken.</p>
+<p>Das Spiel soll informationsreich sein und Spaß machen.
+Ein Nebenergebnis des Spieles ist Aufmerksamkeit auf unsere Umwelt zu machen, denn die Fragen im Quiz beziehen sich darauf.</p>
 </div>
 </div>
 </div>
@@ -534,7 +533,7 @@ Ein Nebenergebnis des Spieles ist strategisches und taktisches Denken.</p>
 <h2 id="_projektziel">5. Projektziel</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Ein funktionierendes UNO-Program, dass dem Spieler Spaß und Unterhaltung bietet.</p>
+<p>Ein funktionierendes Quiz, dass dem Spieler Spaß, Unterhaltung und Informationen bietet.</p>
 </div>
 <div class="paragraph">
 <p>Ziele:</p>
@@ -542,19 +541,13 @@ Ein Nebenergebnis des Spieles ist strategisches und taktisches Denken.</p>
 <div class="ulist">
 <ul>
 <li>
-<p>Funktionierendes Spiel:</p>
+<p>Funktionierendes Spiel</p>
 </li>
 <li>
 <p>Spielstand mit Highscore</p>
 </li>
 <li>
 <p>Statistiken</p>
-</li>
-<li>
-<p>(+) Farbenblinden Modus</p>
-</li>
-<li>
-<p>(+) verschiedene Spielmodi</p>
 </li>
 </ul>
 </div>
@@ -574,10 +567,7 @@ Ein Nebenergebnis des Spieles ist strategisches und taktisches Denken.</p>
 <h2 id="_projektbeschreibung">6. Projektbeschreibung</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>UNO ist eines der bekanntesten Kartenspiele.
-Es gibt verschiedene Varianten davon, und mann kann es
-auf viele verschiedene Arten spielen. Dieses Projekt setzt
-das Spiel digital um.</p>
+<p>Dieses Quiz-Spiel soll dem Nutzer unglaubliche Fakten zu unserer Umwelt liefern.</p>
 </div>
 </div>
 </div>
@@ -585,43 +575,35 @@ das Spiel digital um.</p>
 <h2 id="_meilensteine">7. Meilensteine</h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="_uno_core">7.1. UNO Core:</h3>
+<h3 id="_recherche">7.1. Recherche</h3>
 <div class="paragraph">
-<p>Uno auf der Commandline, mit den basic features, wie verschiedene
-Karten, etl. Bots</p>
+<p>Informative Fakten über die Umwelt finden und diese in Fragen und Antworten formulieren.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_ui_design">7.2. UI Design</h3>
+<h3 id="_logik_umsetzung">7.2. Logik umsetzung</h3>
+<div class="paragraph">
+<p>Grundlegende Aktionen, wie Beispielsweise Fragen abrufen und diese dann über die Command Line beantworten.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_ui_design">7.3. UI Design</h3>
 <div class="paragraph">
 <p>SVG Komponenten und Grunddesign des Programmes<br>
 <a href="https://www.figma.com/file/nTd0iuiqRUMpcepvEPDQ0Z/UNO">Figma UI Concepts</a></p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_ui_code">7.3. UI Code</h3>
+<h3 id="_ui_code">7.4. UI Code</h3>
 <div class="paragraph">
 <p>Umsetzen des UI Designs in JavaFX.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_statistik_datenbank">7.4. Statistik Datenbank</h3>
+<h3 id="_statistik_datenbank">7.5. Statistik Datenbank</h3>
 <div class="paragraph">
 <p>Datenbank für Statistik (Gewinne, Spielzeit, gespielte Spiele)
 in Java mithilfe von JDBC.</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_farbenblinden_modus">7.5. Farbenblinden Modus (+)</h3>
-<div class="paragraph">
-<p>Ein Modus, der das Spielen des Spieles selbst für
-farbenblinde Personen einfach macht.</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_verschiedene_spielmodi">7.6. Verschiedene Spielmodi (+)</h3>
-<div class="paragraph">
-<p>neue Spielmodi mit eigens festgelegten Abläufen und Regeln.</p>
 </div>
 </div>
 </div>
@@ -641,16 +623,13 @@ farbenblinde Personen einfach macht.</p>
 <p>JDBC</p>
 </li>
 <li>
-<p>Datenbank (Oracle DB, MySQL)</p>
+<p>Datenbank (Oracle DB, MySQL, Postgres)</p>
 </li>
 <li>
-<p>Docker?</p>
+<p>Docker</p>
 </li>
 <li>
 <p><a href="https://www.figma.com/file/nTd0iuiqRUMpcepvEPDQ0Z/UNO">Figma</a></p>
-</li>
-<li>
-<p>Illustrator</p>
 </li>
 <li>
 <p>IntelliJ Idea</p>
@@ -708,8 +687,16 @@ farbenblinde Personen einfach macht.</p>
 </thead>
 <tbody>
 <tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Thomas Spindler</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Projektleitung, Programmierung</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Lydia Reiter</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Design, Programmierung</p></td>
+</tr>
+<tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Elias Just</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Datenbanken, Programmierung</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Datenbank, Programmierung</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">David Thaller</p></td>
@@ -718,14 +705,6 @@ farbenblinde Personen einfach macht.</p>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Sebastian Lautischer</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Design, Management</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Lydia Reiter</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Design, Programmierung</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Thomas Spindler</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Projektleitung, Programmierung, JavaFX</p></td>
 </tr>
 </tbody>
 </table>
@@ -765,7 +744,7 @@ farbenblinde Personen einfach macht.</p>
 <div class="sectionbody">
 <div class="imageblock">
 <div class="content">
-<img src="images/class-diagramm.png" alt="class diagramm" width="245" height="423">
+<img src="images/class-diagramm.png" alt="class diagramm" width="635" height="570">
 </div>
 </div>
 </div>
@@ -784,7 +763,7 @@ farbenblinde Personen einfach macht.</p>
 <div id="footer">
 <div id="footer-text">
 Version 1.0.0<br>
-Last updated 2022-03-22 08:12:38 +0100
+Last updated 2022-03-23 20:48:02 +0100
 </div>
 </div>
 </body>

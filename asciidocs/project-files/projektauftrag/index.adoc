@@ -1,0 +1,129 @@
+= Projektauftrag
+David Thaller, Elias Just, Lydia Reiter, Sebastian Lautischer, Thomas Spindler
+1.0.0, 2021/22
+ifndef::imagesdir[:imagesdir: ../../images/]
+//:toc-placement!:  // prevents the generation of the doc at this position, so it can be printed afterwards
+:sourcedir: ../src/main/java
+:icons: font
+:sectnums:    // Nummerierung der Überschriften / section numbering
+:toc: left
+:stylesdir: style
+
+//Need this blank line after ifdef, don't know why...
+ifdef::backend-html5[]
+
+// print the toc here (not at the default position)
+//toc::[]
+
+image::figma.png[float="left", 50, 50, link="https://www.figma.com/file/nTd0iuiqRUMpcepvEPDQ0Z/UNO"]
+image::github.png[50, 50, link="https://github.com/2122-3bhitm-itp/02-project-uno"]
+
+
+== Projektbezeichnung
+Quiz
+
+== Projektauftraggeber
+Thomas Stütz +
+E-Mail-Adresse: t.stütz@htl-leonding.ac.at +
+HTL Leonding
+
+== Projekthintergrund
+Bei dem Projekt geht es vor allem um den Spielspaß.
+
+== Projektendergebnis
+Das Spiel soll informationsreich sein und Spaß machen.
+Ein Nebenergebnis des Spieles ist Aufmerksamkeit auf unsere Umwelt zu machen, denn die Fragen im Quiz beziehen sich darauf.
+
+== Projektziel
+Ein funktionierendes Quiz, dass dem Spieler Spaß, Unterhaltung und Informationen bietet.
+
+Ziele:
+
+* Funktionierendes Spiel
+* Spielstand mit Highscore
+* Statistiken
+
+Nicht Ziele:
+
+* verschiedene  Spielmodi
+
+== Projektbeschreibung
+Dieses Quiz-Spiel soll dem Nutzer unglaubliche Fakten zu unserer Umwelt liefern.
+
+== Meilensteine
+
+=== Recherche
+Informative Fakten über die Umwelt finden und diese in Fragen und Antworten formulieren.
+
+=== Logik umsetzung
+Grundlegende Aktionen, wie Beispielsweise Fragen abrufen und diese dann über die Command Line beantworten.
+
+=== UI Design
+SVG Komponenten und Grunddesign des Programmes +
+https://www.figma.com/file/nTd0iuiqRUMpcepvEPDQ0Z/UNO[Figma UI Concepts]
+
+=== UI Code
+Umsetzen des UI Designs in JavaFX.
+
+=== Statistik Datenbank
+Datenbank für Statistik (Gewinne, Spielzeit, gespielte Spiele)
+in Java mithilfe von JDBC.
+
+== Projektressourcen
+
+* Java, JavaFX
+* Maven
+* JDBC
+* Datenbank (Oracle DB, MySQL, Postgres)
+* Docker
+* https://www.figma.com/file/nTd0iuiqRUMpcepvEPDQ0Z/UNO[Figma]
+* IntelliJ Idea
+* SceneBuilder
+* https://github.com/2122-3bhitm-itp/02-project-uno[Github]
+
+== Projektorganisation
+Projektleiter: Thomas Spindler
+
+=== Aufgabenbereiche
+* Programmieren (basic)
+* Designen
+* Datenbanken
+* JavaFX
+* Management (z.B: docs)
+
+
+=== Einteilung
+
+[options='header']
+|==============================
+| Mitglied | Einteilung
+| Thomas Spindler | Projektleitung, Programmierung
+| Lydia Reiter | Design, Programmierung
+| Elias Just | Datenbank, Programmierung
+| David Thaller | Design, Programmierung
+| Sebastian Lautischer | Design, Management
+|==============================
+
+== Projektstart / Projektende
+noch nicht offiziell festgelegt
+
+== Projektrisiken
+* Spiel, dass keinen Spielspaß bietet
+
+== Abschluss des Projektauftrages
+17.11.2021
+
+== Klassendiagramm
+
+[plantuml, class-diagramm]
+----
+include::../../plantuml/classDiagramm.puml[]
+----
+
+
+== Usecase-Diagramm
+
+[plantuml, usecase-diagramm]
+----
+include::../../plantuml/useCaseDiagramm.puml[]
+----

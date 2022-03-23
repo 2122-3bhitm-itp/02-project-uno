@@ -1,13 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Asciidoctor 2.0.17">
-<meta name="author" content="David Thaller, Elias Just, Lydia Reiter, Sebastian Lautischer, Thomas Spindler">
-<title>Informationen</title>
-<style>
 /* Asciidoctor default stylesheet | MIT License | https://asciidoctor.org */
 
 @import url(//fonts.googleapis.com/css?family=Noto+Sans);
@@ -121,62 +111,3 @@ a {
 #header .details span.email a {
   color: var(--linkcoloralternate);
 }
-</style>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
-<body class="article toc2 toc-left">
-<div id="header">
-<h1>Informationen</h1>
-<div class="details">
-<span id="author" class="author">David Thaller, Elias Just, Lydia Reiter, Sebastian Lautischer, Thomas Spindler</span><br>
-<span id="revnumber">version 1.0.0,</span>
-<span id="revdate">2021/22</span>
-</div>
-<div id="toc" class="toc2">
-<div id="toctitle">Table of Contents</div>
-<ul class="sectlevel1">
-<li><a href="#_projektauftrag">1. Projektauftrag</a></li>
-<li><a href="#_pflichtenheft">2. Pflichtenheft</a></li>
-</ul>
-</div>
-</div>
-<div id="content">
-<div id="preamble">
-<div class="sectionbody">
-<div class="imageblock left">
-<div class="content">
-<a class="image" href="https://www.figma.com/file/nTd0iuiqRUMpcepvEPDQ0Z/UNO"><img src="images/figma.png" alt="figma" width="50" height="50"></a>
-</div>
-</div>
-<div class="imageblock">
-<div class="content">
-<a class="image" href="https://github.com/2122-3bhitm-itp/02-project-uno"><img src="images/github.png" alt="50" width="50"></a>
-</div>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_projektauftrag">1. Projektauftrag</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p><a href="https://2122-3bhitm-itp.github.io/02-project-uno/asciidocs/project-files/projektauftrag/" class="bare">https://2122-3bhitm-itp.github.io/02-project-uno/asciidocs/project-files/projektauftrag/</a></p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_pflichtenheft">2. Pflichtenheft</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p><a href="https://2122-3bhitm-itp.github.io/02-project-uno/asciidocs/project-files/pflichtenheft" class="bare">https://2122-3bhitm-itp.github.io/02-project-uno/asciidocs/project-files/pflichtenheft</a></p>
-</div>
-</div>
-</div>
-</div>
-<div id="footer">
-<div id="footer-text">
-Version 1.0.0<br>
-Last updated 2022-03-23 22:10:05 +0100
-</div>
-</div>
-</body>
-</html>

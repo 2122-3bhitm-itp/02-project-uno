@@ -7,7 +7,8 @@ ifndef::imagesdir[:imagesdir: ../../images/]
 :icons: font
 :sectnums:    // Nummerierung der Überschriften / section numbering
 :toc: left
-:stylesdir: style
+:stylesdir: ../../style
+:stylesheet: dark.css
 
 //Need this blank line after ifdef, don't know why...
 ifdef::backend-html5[]
@@ -47,9 +48,6 @@ Superclass:  | { "java.lang.Object " | [Browse...] }
 }
 @endsalt
 ----
-
-=== Nichtfunktionale Anforderungen (NFA)
-
 
 == Ziele
 

@@ -2,23 +2,48 @@
 skinparam backgroundcolor transparent
 skinparam shadowing false
 
-class Game {}
-class Player {
+top to bottom direction
+
+class Game{}
+
+class Player{
     name
 }
-class Hand {}
-class Card {}
-class Deck {}
-class CardType {
-    color
-    type
+
+class Question {
+    question
+    difficulty
 }
 
-Game -- Player
-(Player, Game) .. Hand
-Hand -- Card
-Card -- CardType
-Game -- Deck
-Deck -- Card
+class Answer{
+    answer
+    isCorrect
+    worth (points)
+}
 
+class Game_Question{}
+
+class Question_Answer{}
+
+class Answered{}
+
+Player "1" <-left- "*" Game
+
+Game_Question "*"-left->"1" Player
+
+Game "*" -- "*" Question
+
+(Game,Question) .. Game_Question
+
+Question "*"--"*" Answer
+
+Question_Answer .. (Question, Answer)
+
+Game_Question "*"--"*" Answer
+
+(Game_Question, Answer) .. Answered
+
+note right of Answer
+    There are multiple correct options, or multiple wrong options
+end note
 @enduml

@@ -20,7 +20,7 @@ image::github.png[50, 50, link="https://github.com/2122-3bhitm-itp/02-project-un
 
 
 == Projektbezeichnung
-UNO Kartenspiel
+Quiz
 
 == Projektauftraggeber
 Thomas Stütz +
@@ -31,35 +31,32 @@ HTL Leonding
 Bei dem Projekt geht es vor allem um den Spielspaß.
 
 == Projektendergebnis
-Alle Regeln des UNO-Spieles sollten eingehalten werden, und dass Programm soll fair gehalten werden.
-Ein Nebenergebnis des Spieles ist strategisches und taktisches Denken.
+Das Spiel soll informationsreich sein und Spaß machen.
+Ein Nebenergebnis des Spieles ist Aufmerksamkeit auf unsere Umwelt zu machen, denn die Fragen im Quiz beziehen sich darauf.
 
 == Projektziel
-Ein funktionierendes UNO-Program, dass dem Spieler Spaß und Unterhaltung bietet.
+Ein funktionierendes Quiz, dass dem Spieler Spaß, Unterhaltung und Informationen bietet.
 
 Ziele:
 
-* Funktionierendes Spiel:
+* Funktionierendes Spiel
 * Spielstand mit Highscore
 * Statistiken
-* (+) Farbenblinden Modus
-* (+) verschiedene Spielmodi
 
 Nicht Ziele:
 
 * verschiedene  Spielmodi
 
 == Projektbeschreibung
-UNO ist eines der bekanntesten Kartenspiele.
-Es gibt verschiedene Varianten davon, und mann kann es
-auf viele verschiedene Arten spielen. Dieses Projekt setzt
-das Spiel digital um.
+Dieses Quiz-Spiel soll dem Nutzer unglaubliche Fakten zu unserer Umwelt liefern.
 
 == Meilensteine
 
-=== UNO Core:
-Uno auf der Commandline, mit den basic features, wie verschiedene
-Karten, etl. Bots
+=== Recherche
+Informative Fakten über die Umwelt finden und diese in Fragen und Antworten formulieren.
+
+=== Logik umsetzung
+Grundlegende Aktionen, wie Beispielsweise Fragen abrufen und diese dann über die Command Line beantworten.
 
 === UI Design
 SVG Komponenten und Grunddesign des Programmes +
@@ -72,22 +69,14 @@ Umsetzen des UI Designs in JavaFX.
 Datenbank für Statistik (Gewinne, Spielzeit, gespielte Spiele)
 in Java mithilfe von JDBC.
 
-=== Farbenblinden Modus (+)
-Ein Modus, der das Spielen des Spieles selbst für
-farbenblinde Personen einfach macht.
-
-=== Verschiedene Spielmodi (+)
-neue Spielmodi mit eigens festgelegten Abläufen und Regeln.
-
 == Projektressourcen
 
 * Java, JavaFX
 * Maven
 * JDBC
-* Datenbank (Oracle DB, MySQL)
-* Docker?
+* Datenbank (Oracle DB, MySQL, Postgres)
+* Docker
 * https://www.figma.com/file/nTd0iuiqRUMpcepvEPDQ0Z/UNO[Figma]
-* Illustrator
 * IntelliJ Idea
 * SceneBuilder
 * https://github.com/2122-3bhitm-itp/02-project-uno[Github]
@@ -108,11 +97,11 @@ Projektleiter: Thomas Spindler
 [options='header']
 |==============================
 | Mitglied | Einteilung
-| Elias Just | Datenbanken, Programmierung
+| Thomas Spindler | Projektleitung, Programmierung
+| Lydia Reiter | Design, Programmierung
+| Elias Just | Datenbank, Programmierung
 | David Thaller | Design, Programmierung
 | Sebastian Lautischer | Design, Management
-| Lydia Reiter | Design, Programmierung
-| Thomas Spindler | Projektleitung, Programmierung, JavaFX
 |==============================
 
 == Projektstart / Projektende

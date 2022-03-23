@@ -6,7 +6,7 @@ left to right direction
 
 actor "Player" as pl
 
-rectangle UNO {
+rectangle QUIZ {
     usecase "Entertainment" as UCEnt
 }
 

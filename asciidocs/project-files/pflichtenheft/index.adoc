@@ -34,21 +34,6 @@ von Ihnen achten auf deren Konsum, mit verwendung von Glasflaschen oder Mülltre
 Jedoch gibt es Jugendliche, Erwachsene und Kinder, die dieses Thema nicht verstehen oder
 auch nicht begreifen wie wichtig dieses Thema ist, denn unsere Fehlentscheidungen holen uns schnell ein.
 
-== Aufgabenstellung
-=== Funktionale Anforderungen
-
-[plantuml,wireframe,png]
-----
-@startsalt
-{
-Name         | "                 "
-Modifiers:   | { (X) public | () default | () private | () protected
-	            [] abstract | [] final   | [] static }
-Superclass:  | { "java.lang.Object " | [Browse...] }
-}
-@endsalt
-----
-
 == Ziele
 
 Unser wichtigstes Ziel ist ein funktionierendes Spiel, doch auch ist eine Statistik sehr wichtig.

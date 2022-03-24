@@ -27,7 +27,7 @@ Doch auch wir Schüler der HTL Leonding wollen etwas für unsere Welt unternehme
 == Istzustand
 
 Viele unserer Mitmenschen wissen schon einiges über den Klimawandel und dessen Folgen und einige
-von Ihnen achten auf deren Konsum, mit verwendung von Glasflaschen oder Mülltrennung.
+von Ihnen achten auf deren Konsum, mit Verwendung von Glasflaschen oder Mülltrennung.
 
 == Problemstellung
 
@@ -45,3 +45,22 @@ image::systemarchitektur.png[]
 
 Die Datenbank (Postgres) läuft in einen Docker Container. Mittels JDBC wird eine Verbindung mit der Datenbank aufgebaut
 und auf einer JavaFx Oberfläche angezeigt.
+
+////
+== Vorstellung
+====== zum Beispiel:
+** Wie viele Tiere und Pflanzenarten sterben im Durchschnitt täglich aus?
+
+* 10
+* 50
+* 100
+* 150
+* 200
+
+
+> > Nachdem der User sich für eine Auswahl entschieden hat, wird die Lösung in grün/rot für die richtige/falsche Antwort erscheinen:
+
+====
+Dreizehn Millionen. So viele Tier- und Pflanzenarten soll es auf dem blauen Planeten geben, schätzen Wissenschaftler. Noch. Denn im Durchschnitt verschwinden *150* von ihnen - *jeden Tag*. Insgesamt sind bereits eine Million Spezies vom Aussterben bedroht.
+====
+////

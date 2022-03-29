@@ -23,8 +23,6 @@ class Answer{
 
 class Game_Question{}
 
-class Question_Answer{}
-
 class Answered{}
 
 Player "1" <-left- "*" Game

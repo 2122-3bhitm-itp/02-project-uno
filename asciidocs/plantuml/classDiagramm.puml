@@ -7,18 +7,18 @@ top to bottom direction
 class Game{}
 
 class Player{
-    name
+    - name
 }
 
 class Question {
-    question
-    difficulty
+    - text
+    - difficulty
 }
 
 class Answer{
-    answer
-    isCorrect
-    worth (points)
+    - text
+    - isCorrect
+    - points
 }
 
 class Game_Question{}
@@ -35,9 +35,7 @@ Game "*" -- "*" Question
 
 (Game,Question) .. Game_Question
 
-Question "*"--"*" Answer
-
-Question_Answer .. (Question, Answer)
+Question "1"<--"*" Answer
 
 Game_Question "*"--"*" Answer
 

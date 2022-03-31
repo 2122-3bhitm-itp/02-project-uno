@@ -63,4 +63,4 @@ und auf einer JavaFx Oberfläche angezeigt.
 ====
 Dreizehn Millionen. So viele Tier- und Pflanzenarten soll es auf dem blauen Planeten geben, schätzen Wissenschaftler. Noch. Denn im Durchschnitt verschwinden *150* von ihnen - *jeden Tag*. Insgesamt sind bereits eine Million Spezies vom Aussterben bedroht.
 ====
-////
+/////

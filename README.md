@@ -1,4 +1,8 @@
-# 02-project-UNO
+# 02-project-quiz
+
+[Github](https://github.com/2122-3bhitm-itp/02-quiz)
+
+[docs](https://2122-3bhitm-itp.github.io/02-quiz/asciidocs/)
 
 A school project which implements the game UNO with the help of Java
 

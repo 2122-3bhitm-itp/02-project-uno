@@ -118,7 +118,7 @@ noch nicht offiziell festgelegt
 
 [plantuml, class-diagramm]
 ----
-include::../../plantuml/classDiagramm.puml[]
+include::../../plantuml/cld.puml[]
 ----
 
 
@@ -126,5 +126,5 @@ include::../../plantuml/classDiagramm.puml[]
 
 [plantuml, usecase-diagramm]
 ----
-include::../../plantuml/useCaseDiagramm.puml[]
+include::../../plantuml/ucd.puml[]
 ----

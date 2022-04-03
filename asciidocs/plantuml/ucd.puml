@@ -1,6 +1,4 @@
 @startuml
-skinparam backgroundcolor transparent
-skinparam shadowing false
 
 left to right direction
 

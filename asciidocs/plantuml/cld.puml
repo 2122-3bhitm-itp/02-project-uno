@@ -24,8 +24,6 @@ class Answered{}
 
 Player "1" <-left- "*" Game
 
-Game_Question "*"-left->"1" Player
-
 Game "*" -- "*" Question
 
 (Game,Question) .. Game_Question

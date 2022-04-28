@@ -1,8 +1,4 @@
 @startuml
-skinparam backgroundcolor transparent
-skinparam shadowing false
-skinparam ArrowFontColor white
-
 top to bottom direction
 
 class Game{}

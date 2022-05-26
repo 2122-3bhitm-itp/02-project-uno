@@ -19,7 +19,9 @@ CREATE TABLE answer (
     AnswerId int PRIMARY KEY,
     answer varchar(256) not null,
     iscorrect bool not null,
-    worth int not null
+    worth int not null,
+    QuestionId int,
+    FOREIGN KEY (QuestionId) REFERENCES question (QuestionId)
 );
 
 CREATE TABLE game_question (

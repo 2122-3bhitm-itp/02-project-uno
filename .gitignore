@@ -1,3 +1,5 @@
+code/.mvn/*
+
 ### Stütz Gitginore ###
 # Gitignore provided by the teacher
 asciidocs/.asciidoctor/

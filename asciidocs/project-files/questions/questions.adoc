@@ -1,0 +1,182 @@
+= Fragen des Projektes
+David Thaller, Elias Just, Lydia Reiter, Sebastian Lautischer, Thomas Spindler
+1.0.0, 2021/22
+ifndef::imagesdir[:imagesdir: ../../images/]
+//:toc-placement!:  // prevents the generation of the doc at this position, so it can be printed afterwards
+:sourcedir: ../src/main/java
+:icons: font
+:sectnums:    // Nummerierung der Überschriften / section numbering
+:toc: left
+:stylesdir: ../../style/
+:stylesheet: dark.css
+
+//Need this blank line after ifdef, don't know why...
+ifdef::backend-html5[]
+
+// print the toc here (not at the default position)
+//toc::[]
+
+image::figma.png[float="left", 50, 50, link="https://www.figma.com/file/nTd0iuiqRUMpcepvEPDQ0Z/UNO"]
+image::github.png[50, 50, link="https://github.com/2122-3bhitm-itp/02-project-uno"]
+
+Projekt quiz
+
+Die *fett* gedruckten Antwortmöglichkeiten sind richtig.
+
+== Plastik
+
+link:https://www.nationalgeographic.de/10-erschreckende-fakten-uber-plastik[Quelle]
+
+=== Wie viele Plastikteile schwimmern in den Meeren
+
+Antwortmöglichkeiten:
+
+* 1 million
+* 1 billion
+* *5 billionen*
+* 10 billionen
+
+=== Wie viele Tonnen Plastik wurden im Jahr 2015 produziert?
+
+Antwortmöglichkeiten:
+
+* ~ 100 millionen
+* ~ 368 millionen
+* *~ 400 millionen*
+* ~ 1 billionen
+
+=== Was ist die kürzeste Lebenszeit von Plastik?
+
+* 100 Jahre
+* 300 Jahre
+* *400 Jahre*
+* 1000 Jahre
+
+=== Was ist die längste Lebenszeit von Plastik?
+
+* 100 Jahre
+* 500 Jahre
+* 1000 Jahre
+* *fast für immer*
+
+=== Was produziert am meisten Plastikmüll?
+
+* *Verpackungen*
+* Plastikflaschen
+* Spielzeug
+* Essen
+
+=== Wie veil prozent des Plastiks wird nur einmal verwendet, und dann weggeworfen?
+
+* 20%
+* 60%
+* *40%*
+* 80%
+
+== Umweltfakten
+
+link:https://gundel-koffer.de/blog/2020/11/13/33-schockierende-fakten-ueber-die-verschmutzung-der-ozean-die-dir-angst-machen-koennten-kostenlose-infographic/[Quelle]
+
+=== Wie viele Plastikteile landen täglich in unseren Ozeanen:
+
+* 100.000
+* 4 millionen
+* *8 millionen*
+* über 10 millionen
+
+=== Wie viel Plastikmüll produzieren wir jährlich?
+
+* ~100 millionen
+* *~400 millionen*
+* über 800 millionen
+* nichts
+
+=== Gibt es in den Ozeanen mehr Plastikteile als Sterne in der Milchstraße
+
+* *ja*
+* nein
+
+== Umweltfakten 2
+
+link:https://www.pinterest.de/hellosimple1216/umweltfakten/[Quelle]
+
+=== Wie viel des auf dem Wasser schwimmenden Eises is in den letzen 30 Jahren geschmolzen?
+
+* 10%
+* 30%
+* 50%
+* *75%*
+
+== Was ist das größte Problem mit Meeresfischen?
+
+* Sie sind zu salzig, da diese aus dem Salzwasser kommen
+* *es wurde immer wieder Plastik in den Mägen gefunden*
+* es wurde immer wieder Plastik im Mund gefunden
+* es wurden immer wieder schwere Giftstoffe wie Öl oder Nervengift in ihnen Gefunden
+
+=== Wie viel unseres Meereslebens wurde noch nicht erforscht?
+
+* 50%
+* *33%*
+* 60%
+* 10%
+
+== Nachhaltigkeit
+
+link:https://www.brunel.net/de-de/blog/fakten-nachhaltigkeit[Quelle]
+
+=== Wie viel Lebensmittel werfen wir jedes Jahr durchschnittlich weg?
+
+* *80kg*
+* 100kg
+* 1 tonne
+* 10 kg
+
+=== Was war das wärmste Jahre seit Beobachtungsbeginn (Stand 2019)
+
+* 2002
+* *2019*
+* 2010
+* 2017
+
+=== Wie viel Prozent haben Bienen seit den 80er Jahren abgenommen?
+
+* 20%
+* 50%
+* *80%*
+* 60%
+
+== Umweltfakten 2
+
+link:https://www.danke.de/umwelt-funfacts/[Quelle]
+
+=== Wie viel Klopapier verbrauchen wir durchschnittlich jedes Jahr?
+
+* 105 Rollen
+* 200 kg
+* *46 Rollen*
+* 500 kg
+
+== Mikroplastik
+
+link:https://utopia.de/mikroplastik-fakten-109893/[Quelle]
+
+=== Was sind die größten Verursacher von mikroplastik?
+
+* Verpackungen
+* *Autos*
+* Plastikflaschen
+
+=== Wie viel Plastik essen wir ca. jeder Woche?
+
+* 1 kg
+* *eine Kreditkarte*
+* ein Plastiksackerl
+* 300 g
+
+=== Was ist die am meist ausgelöste Krankheit durch Mikroplastik?
+
+* Covid 19
+* Alzheimer
+* *Krebs*
+* Herzprobleme

@@ -25,3 +25,7 @@ https://2122-3bhitm-itp.github.io/02-quiz/asciidocs/project-files/projektauftrag
 == Pflichtenheft
 
 https://2122-3bhitm-itp.github.io/02-quiz/asciidocs/project-files/pflichtenheft/[Pflichtenheft]
+
+== Fragensammlung
+
+link:project-files/questions/questions.html[Fragensammlung]

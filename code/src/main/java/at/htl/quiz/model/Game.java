@@ -7,10 +7,7 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 import java.sql.SQLException;
-import java.util.Collection;
-import java.util.Collections;
-import java.util.List;
-import java.util.Locale;
+import java.util.*;
 import java.util.concurrent.atomic.AtomicInteger;
 
 public class Game {
@@ -62,6 +59,7 @@ public class Game {
         var player = new Player("Player1");
         int points = 0;
         int questionCount = 0;
+        List<AskedQuestions> asked = new LinkedList<>();
 
         boolean isRunning = true;
         while (isRunning) {
@@ -99,6 +97,7 @@ public class Game {
                 //check answer:
                 assert answer != null;
                 questionCount++;
+                asked.add(new AskedQuestions(question, answer));
                 if (answer.isCorrect()) {
                     points++;
                     System.out.println("CORRECT!");
@@ -136,5 +135,12 @@ public class Game {
         System.out.println("Statistics: ".toUpperCase(Locale.ROOT));
         System.out.println("Questions answered: " + questionCount);
         System.out.println("Points: " + points);
+
+        //save status to DB:
+        try {
+            db.saveGame(asked, this);
+        } catch (SQLException e) {
+            System.out.println("Error while saving game in DB!");
+        }
     }
 }

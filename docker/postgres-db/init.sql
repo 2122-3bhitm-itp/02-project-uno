@@ -6,7 +6,7 @@ CREATE TABLE player
 
 CREATE TABLE game
 (
-    GameId   int PRIMARY KEY,
+    GameId   serial PRIMARY KEY,
     PlayerId int not null,
     FOREIGN KEY (PlayerId) REFERENCES player (PlayerId)
 );

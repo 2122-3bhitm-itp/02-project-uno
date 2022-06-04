@@ -14,23 +14,31 @@ public class Main {
         Repo db = null;
 
         try {
+            //connect to db:
             db = new Repo();
-        } catch (SQLException e) {
-            System.out.println("Could not connect to Database, try again");
-            System.exit(0);
-        }
 
-        System.out.print("Player name: ");
-        String name = CommandLineUtil.getLine();
-        System.out.println("Welcome " + name + "!");
+            //ask Player for name:
+            System.out.print("Player name: ");
+            String name = CommandLineUtil.getLine();
+            var player = new Player(name);
 
-        var game = new Game(new Player(name), db);
-        game.startCommandLineGame();
+            //save Player to db;
+            db.savePlayer(player);
 
-        try {
+            //welcome player and start game:
+            System.out.println("Welcome " + name + "!");
+            var game = new Game(player, db);
+            game.startCommandLineGame();
+
+            //close database (since the game will be finished by then)
             db.close();
         } catch (SQLException e) {
             e.printStackTrace();
+            System.out.println("Something went wrong during the database connection");
+            try {
+                db.close();
+            } catch (SQLException ignored) {}
+            System.exit(0);
         }
     }
 }

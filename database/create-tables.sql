@@ -4,7 +4,7 @@ CREATE TABLE player (
 );
 
 CREATE TABLE game (
-    GameId int PRIMARY KEY,
+    GameId serial PRIMARY KEY,
     PlayerId int not null,
     FOREIGN KEY (PlayerId) REFERENCES player (PlayerId)
 );
@@ -25,7 +25,7 @@ CREATE TABLE answer (
 );
 
 CREATE TABLE game_question (
-    GameQuestionId int not null PRIMARY KEY,
+    GameQuestionId serial not null PRIMARY KEY,
     GameId int not null,
     QuestionId int not null,
     answeredFrom int not null,

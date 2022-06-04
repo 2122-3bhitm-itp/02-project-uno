@@ -1,7 +1,6 @@
 package at.htl.quiz.db;
 
-import at.htl.quiz.model.Answer;
-import at.htl.quiz.model.Question;
+import at.htl.quiz.model.*;
 
 import java.sql.*;
 import java.util.ArrayList;
@@ -12,10 +11,31 @@ public class Repo {
 
     public Repo() throws SQLException {
         this.conn = DriverManager.getConnection("jdbc:postgresql://localhost:5432/db", "app", "app");
+        this.conn.setAutoCommit(false);
     }
 
     public void close() throws SQLException {
         this.conn.close();
+    }
+
+    public void saveGame(List<AskedQuestions> questions, Game game) throws SQLException {
+        saveGameRaw(game);
+        //TODO: finish
+    }
+
+    /**
+     * Saves a player to the database. If the player already exists, it will be ignored
+     * @param player player to insert
+     * @return updated rows
+     * @throws SQLException on failed request
+     */
+    public int savePlayer(Player player) throws SQLException {
+        var pstmt = this.conn.prepareStatement("insert into player (name) values (?) on conflict do nothing");
+        pstmt.setString(1, player.getName());
+        int result = pstmt.executeUpdate();
+        pstmt.close();
+        this.conn.commit();
+        return result;
     }
 
     public List<Question> getQuestions(int amount) throws SQLException {
@@ -71,5 +91,19 @@ public class Repo {
         rs.close();
         pstmt.close();
         return questions;
+    }
+
+    /**
+     * Saves the raw game, so no values are being saved. THIS DOES NOT COMMIT!
+     * @param game game to save
+     * @return updated rows
+     * @throws SQLException on failed request
+     */
+    private int saveGameRaw(Game game) throws SQLException {
+        var pstmt = this.conn.prepareStatement("insert into game (playerid)\n values ((select playerid from player where name = ?))");
+        pstmt.setString(1, game.getPlayer().getName());
+        int result = pstmt.executeUpdate();
+        pstmt.close();
+        return result;
     }
 }

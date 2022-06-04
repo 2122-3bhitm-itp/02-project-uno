@@ -1,6 +1,6 @@
 CREATE TABLE player
 (
-    PlayerId int PRIMARY KEY,
+    PlayerId serial PRIMARY KEY,
     name     varchar(50) unique not null
 );
 

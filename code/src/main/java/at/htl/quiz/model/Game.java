@@ -10,6 +10,7 @@ import java.sql.SQLException;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
+import java.util.Locale;
 import java.util.concurrent.atomic.AtomicInteger;
 
 public class Game {
@@ -127,12 +128,13 @@ public class Game {
                 e.printStackTrace();
                 System.out.println("Something went wrong with the Database connection!");
             }
-
-            //print statistics of the game
-            System.out.println("=".repeat(40));
-            System.out.println("Statistics: ");
-            System.out.println("Questions answered: " + questionCount);
-            System.out.println("Points: " + points);
         }
+        //end of game:
+
+        //print statistics of the game
+        System.out.println("=".repeat(40));
+        System.out.println("Statistics: ".toUpperCase(Locale.ROOT));
+        System.out.println("Questions answered: " + questionCount);
+        System.out.println("Points: " + points);
     }
 }

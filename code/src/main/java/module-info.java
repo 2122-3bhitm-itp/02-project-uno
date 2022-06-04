@@ -1,6 +1,7 @@
 module at.htl.quiz {
     requires javafx.controls;
     requires javafx.fxml;
+    requires java.sql;
 
 
     opens at.htl.quiz to javafx.fxml;

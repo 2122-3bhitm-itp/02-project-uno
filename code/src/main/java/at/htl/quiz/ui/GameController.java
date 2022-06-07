@@ -36,7 +36,13 @@ public class GameController {
     private GridPane gpAnswers;
 
     @FXML
+    private Label lbAnweredValue;
+
+    @FXML
     private Label lbQuestionText;
+
+    @FXML
+    private Label lbScoreValue;
 
     @FXML
     private ProgressBar pbMain;
@@ -50,13 +56,16 @@ public class GameController {
     void submitQuestion(ActionEvent event) {
         Answer selected = getSelectedAnswer();
         this.game.addAnswerOption(new AskedQuestion(this.currentQuestion, selected));
+        updateStatistics();
+        loadNewQuestion();
     }
 
     @FXML
     void initialize() {
         lbQuestionText.setWrapText(true);
-        lbQuestionText.setTextAlignment(TextAlignment.LEFT);
+        lbQuestionText.setTextAlignment(TextAlignment.JUSTIFY);
         loadNewQuestion();
+        updateStatistics();
     }
 
     public GameController(Game game) {
@@ -118,6 +127,9 @@ public class GameController {
         }).start();
     }
 
+    /**
+     * clears the selected question
+     */
     public void clearAnswerOptions() {
         gpAnswers.getChildren().forEach(node -> {
             if(node instanceof Label lb) {
@@ -130,6 +142,10 @@ public class GameController {
         });
     }
 
+    /**
+     * Gets the selected question
+     * @return correct answer (null if none)
+     */
     private Answer getSelectedAnswer() {
          AtomicReference<Answer> correct = new AtomicReference<>(null);
          var answers = this.currentQuestion.getAnswers();
@@ -145,5 +161,10 @@ public class GameController {
              }
          });
          return correct.get();
+    }
+
+    private void updateStatistics() {
+        lbAnweredValue.setText("" + game.getQuestionsAnswered().size());
+        lbScoreValue.setText("" + game.getScore());
     }
 }

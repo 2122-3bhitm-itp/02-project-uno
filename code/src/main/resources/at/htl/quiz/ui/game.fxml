@@ -15,11 +15,11 @@
 
 <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <SplitPane dividerPositions="0.4983277591973244" prefHeight="379.0" prefWidth="600.0">
+      <SplitPane dividerPositions="0.5" prefHeight="379.0" prefWidth="600.0">
          <items>
-            <VBox spacing="20.0">
+            <VBox alignment="TOP_CENTER" spacing="20.0">
                <children>
-                  <Label text="QUESTION" textAlignment="CENTER">
+                  <Label alignment="TOP_LEFT" text="QUESTION" textAlignment="CENTER">
                      <font>
                         <Font name="System Bold" size="28.0" />
                      </font>
@@ -32,7 +32,7 @@
                   <GridPane fx:id="gpAnswers">
                     <columnConstraints>
                       <ColumnConstraints hgrow="SOMETIMES" maxWidth="239.0" minWidth="10.0" prefWidth="198.0" />
-                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="142.0" minWidth="10.0" prefWidth="87.0" />
+                      <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="142.0" minWidth="10.0" prefWidth="87.0" />
                     </columnConstraints>
                     <rowConstraints>
                       <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
@@ -62,7 +62,38 @@
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                </padding>
             </VBox>
-            <VBox />
+            <VBox alignment="TOP_CENTER" spacing="20.0">
+               <children>
+                  <Label alignment="TOP_LEFT" text="STATISTICS" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="28.0" />
+                     </font>
+                  </Label>
+                  <GridPane>
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="193.0" minWidth="10.0" prefWidth="193.0" />
+                      <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" maxWidth="137.0" minWidth="10.0" prefWidth="93.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Label text="Questions Answered:" />
+                        <Label text="Score" GridPane.rowIndex="1" />
+                        <Label fx:id="lbAnweredValue" text="AMOUNT" GridPane.columnIndex="1" />
+                        <Label fx:id="lbScoreValue" text="SCORE" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                     </children>
+                  </GridPane>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </VBox>
          </items>
       </SplitPane>
       <ProgressBar fx:id="pbMain" prefWidth="200.0" progress="0.0" />

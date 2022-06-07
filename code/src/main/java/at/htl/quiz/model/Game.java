@@ -23,6 +23,9 @@ public class Game {
     Stage mainStage;
     currentstage currentstage = null;
 
+    private List<AskedQuestion> questionsAnswered = new LinkedList<>();
+    private int score = 0;
+
 
     public Game(Player player) {
         this();
@@ -42,6 +45,14 @@ public class Game {
         return player;
     }
 
+    public List<AskedQuestion> getQuestionsAnswered() {
+        return questionsAnswered;
+    }
+
+    public int getScore() {
+        return score;
+    }
+
     /**
      * Starts the UI for the game
      *
@@ -55,11 +66,33 @@ public class Game {
         this.currentstage = this.currentstage.MAINMENU;
     }
 
+    public void addAnswerOption(AskedQuestion questions) {
+        this.questionsAnswered.add(questions);
+        if(questions.getAnswer().isCorrect()) {
+            incrementScore(questions.getAnswer().getPoints());
+        }
+    }
+
+    public void incrementScore(int number) {
+        this.score += number;
+    }
+
+    public Question getQuestion()  {
+        try {
+            List<Question> list = this.db.getQuestions(1);
+            if(list == null) {
+                return null;
+            }
+            return list.get(0);
+        } catch (SQLException e) {
+            return null;
+        }
+    }
+
     public void startCommandLineGame() {
-        var player = new Player("Player1");
         int points = 0;
         int questionCount = 0;
-        List<AskedQuestions> asked = new LinkedList<>();
+        List<AskedQuestion> asked = new LinkedList<>();
 
         boolean isRunning = true;
         while (isRunning) {
@@ -97,7 +130,7 @@ public class Game {
                 //check answer:
                 assert answer != null;
                 questionCount++;
-                asked.add(new AskedQuestions(question, answer));
+                asked.add(new AskedQuestion(question, answer));
                 if (answer.isCorrect()) {
                     points++;
                     System.out.println("CORRECT!");

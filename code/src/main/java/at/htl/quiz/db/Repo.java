@@ -18,7 +18,7 @@ public class Repo {
         this.conn.close();
     }
 
-    public void saveGame(List<AskedQuestions> questions, Game game) throws SQLException {
+    public void saveGame(List<AskedQuestion> questions, Game game) throws SQLException {
         saveGameRaw(game);
         //TODO: finish
     }

@@ -41,6 +41,11 @@ public class Question {
                 .toList();
     }
 
+    public boolean isCorrect(Answer answer) {
+        List<Answer> correct = getCorrectAnswers();
+        return correct.contains(answer);
+    }
+
     @Override
     public String toString() {
         return "Question{" +

@@ -1,10 +1,10 @@
 package at.htl.quiz.model;
 
-public class AskedQuestions {
+public class AskedQuestion {
     private final Question question;
     private final Answer answer;
 
-    public AskedQuestions(Question question, Answer answer) {
+    public AskedQuestion(Question question, Answer answer) {
         this.question = question;
         this.answer = answer;
     }

@@ -41,6 +41,10 @@ public class Game {
         this.player = null;
     }
 
+    public Game(Repo db) {
+        this.db = db;
+    }
+
     public Player getPlayer() {
         return player;
     }

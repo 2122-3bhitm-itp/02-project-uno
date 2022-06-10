@@ -29,7 +29,7 @@ public class Test extends Application {
             });
 
             Game game = new Game(p, db);
-            GameController gameController = new GameController(game);
+            var gameController = new GameController(game);
             gameController.show(stage);
         } catch (SQLException | IOException e) {
             e.printStackTrace();

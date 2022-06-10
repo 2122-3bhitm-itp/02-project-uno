@@ -171,9 +171,25 @@ public class Game {
 
         //save status to DB:
         try {
-            db.saveGame(asked, this);
+            db.saveGame(this);
         } catch (SQLException e) {
             System.out.println("Error while saving game in DB!");
         }
+    }
+
+    /**
+     * Ends the game and saves everything to the database;
+     * @return true if saving successfull, false otherwise
+     */
+    public boolean end() {
+        //TODO: save to DB
+        try {
+            this.db.saveGame(this);
+            this.db.close();
+        } catch (SQLException e) {
+            System.err.println("Could not close database connection: " + e.getMessage());
+            return false;
+        }
+        return true;
     }
 }

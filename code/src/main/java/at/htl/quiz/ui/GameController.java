@@ -5,11 +5,9 @@ import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
-import javafx.scene.control.Label;
-import javafx.scene.control.ProgressBar;
-import javafx.scene.control.ProgressIndicator;
+import javafx.scene.control.*;
 import javafx.scene.layout.GridPane;
 import javafx.scene.paint.Color;
 import javafx.scene.text.TextAlignment;
@@ -25,6 +23,9 @@ public class GameController {
     private static final String ANSWERED_TEXT = "Selected";
 
     Game game;
+
+    @FXML
+    private SplitPane spMain;
 
     @FXML
     private Button btEndGame;
@@ -49,7 +50,11 @@ public class GameController {
 
     @FXML
     void endGame(ActionEvent event) {
-
+        Node gameArea = spMain.getItems().get(0);
+        spMain.getItems().remove(gameArea);
+        (new Thread(() -> {
+            this.game.end();
+        })).start();
     }
 
     @FXML

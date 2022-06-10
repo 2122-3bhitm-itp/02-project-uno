@@ -18,11 +18,6 @@ public class Repo {
         this.conn.close();
     }
 
-    public void saveGame(List<AskedQuestion> questions, Game game) throws SQLException {
-        saveGameRaw(game);
-        //TODO: finish
-    }
-
     /**
      * Saves a player to the database. If the player already exists, it will be ignored
      * @param player player to insert
@@ -70,7 +65,7 @@ public class Repo {
 
     /**
      * Gets a List of Questions that have no answers connected to them. The int value defines the length of the List.
-     * @param amount
+     * @param amount number of questions
      * @return List of Questions with no answers
      * @throws SQLException if something went wrong
      */
@@ -91,6 +86,10 @@ public class Repo {
         rs.close();
         pstmt.close();
         return questions;
+    }
+
+    public void saveGame(Game game) throws SQLException {
+        //TODO: save game to Database
     }
 
     /**

@@ -179,3 +179,40 @@ link:https://utopia.de/mikroplastik-fakten-109893/[Quelle]
 * Alzheimer
 * *Krebs*
 * Herzprobleme
+
+== Zusätzliche Fragen
+
+=== Um wie viel Grad Celsius war die Erde vor 4,5 Millionen Jahren kühler?
+
+* 12 Grad
+* 8 Grad
+* *4 Grad*
+* 0 Grad
+
+=== Um wie viel Prozent ist die CO2-Konzentration durch menschliches Handeln seit dem Jahr 1850 bis 2020 gestiegen?
+
+* 64%
+* *48%*
+* 32%
+* 11%
+
+=== Wie viel Hektar Wald müssten angelegt werden um im Jahr 2050 die Klimaneutralität zu erreichen?
+
+* 1,6 Billionen Hektar
+* *1,6 Milliarden Hektar*
+* 1,6 Millionen Hektar
+* 160 000 Hektar
+
+=== Um wie viel steigt der Meeresspiegel pro Jahr?
+
+* 1,78 Meter
+* 1,78 Dezimeter
+* *1,78 Zentimeter*
+* 1,78 Millimeter
+
+=== Um wie viel Hektar vergrößert sich die Wüste im Jahr?
+
+* 12 Billionen Hektar
+* 12 Milliarden Hektar
+* *12 Millionen Hektar*
+* 120 000 Hektar

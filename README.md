@@ -4,7 +4,7 @@
 
 [docs](https://2122-3bhitm-itp.github.io/02-quiz/asciidocs/)
 
-A school project which implements the game UNO with the help of Java
+A school project which implements a simple question game with JavaFX
 
 ## Team
 

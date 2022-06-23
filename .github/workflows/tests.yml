@@ -22,5 +22,11 @@ jobs:
           key: ${{ runner.os }}-m2-${{ hashFiles('**/pom.xml') }}
           restore-keys: ${{ runner.os }}-m2
 
+      - name: cd docker
+        run: cd docker
+        
+      - name: Start Db
+        run: docker-compose up -d
+
       - name: Test with Maven
         run: mvn -B test --file code/pom.xml

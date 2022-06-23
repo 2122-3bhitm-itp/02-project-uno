@@ -17,7 +17,12 @@ values (1, 'Wie viele Plastikteile schwimmern in den Meeren', 7),
        (16, 'Wie viel Klopapier verbrauchen wir durchschnittlich jedes Jahr?', 3),
        (17, 'Was sind die größten Verursacher von mikroplastik?', 9),
        (18, 'Wie viel Plastik essen wir ca. jeder Woche?', 4),
-       (19, 'Was ist die am meist ausgelöste Krankheit durch Mikroplastik?', 8);
+       (19, 'Was ist die am meist ausgelöste Krankheit durch Mikroplastik?', 8),
+       (20, 'Um wie viel Grad Celsius war die Erde vor 4,5 Millionen Jahren kühler?', 6);
+       (21, 'Um wie viel Prozent ist die CO2-Konzentration durch menschliches Handeln seit dem Jahr 1850 bis 2020 gestiegen?', 8);
+       (22, 'Wie viel Hektar Wald müssten angelegt werden um im Jahr 2050 die Klimaneutralität zu erreichen?', 7);
+       (23, 'Um wie viel steigt der Meeresspiegel pro Jahr?', 6);
+       (24, 'Um wie viel Hektar vergrößert sich die Wüste im Jahr?', 6);
 
 INSERT INTO answer (answerid, answer, iscorrect, worth, questionid)
 values (1, '1 million', false, 0, 1),
@@ -111,3 +116,33 @@ values (1, '1 million', false, 0, 1),
        (72, 'Alzheimer', false, 0, 19),
        (73, 'Krebs', true, 1, 19),
        (74, 'Herzprobleme', false, 0, 19);
+
+        (75, '12 Grad', false, 0, 20),
+        (76, '8 Grad', false, 0, 20),
+        (77, '4 Grad', true , 1, 20),
+        (78, '0 Grad', false, 0, 20);
+
+        (79, '64%', false, 0, 21),
+        (80, '48%', true, 1, 21),
+        (81, '32%', false, 0, 21),
+        (82, '11%', false, 0, 21);
+
+        (83, '1,6 Billionen Hektar', false, 0, 22),
+        (84, '1,6 Milliarden Hektar', true, 1, 22),
+        (85, '1,6 Millionen Hektar', false, 0, 22),
+        (86, '160 000 Hektar', false, 0, 22);
+
+        (87, '1,78 Meter', false, 0, 23),
+        (88, '1,78 Dezimeter', false, 0, 23),
+        (89, '1,78 Zentimeter', true, 1, 23),
+        (90, '1,78 Millimeter', false, 0, 23);
+
+        (91, '12 Billionen Hektar', false, 0, 24),
+        (92, '12 Milliarden Hektar', false, 0, 24),
+        (93, '12 Millionen Hektar', true, 1, 24),
+        (94, '120 000 Hektar', false, 0, 24);
+
+
+
+
+

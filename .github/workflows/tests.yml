@@ -23,7 +23,7 @@ jobs:
           restore-keys: ${{ runner.os }}-m2
         
       - name: Start Db
-        run: docker-compose up -f docker/docker-compose.yml
+        run: cd docker && docker-compose up -f docker/docker-compose.yml
         
       - name: Test database connection
         run: docker ps

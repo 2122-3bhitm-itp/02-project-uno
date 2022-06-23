@@ -27,6 +27,3 @@ jobs:
         
       - name: Test with Maven
         run: mvn -B test --file code/pom.xml
-        
-      - name: Post Db
-        run: docker-compose down
